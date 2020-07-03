@@ -18,7 +18,8 @@ namespace System.IOStream
             StreamReader stream = new StreamReader(file);
             Console.WriteLine("streamreader created");
             Console.WriteLine("reading file");
-            stream.ReadToEnd();
+            Console.WriteLine( stream.ReadLine());
+            Console.WriteLine( stream.ReadToEnd());
             stream.Close();
             Console.WriteLine("stream reader closed");
             file.Close();

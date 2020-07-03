@@ -24,9 +24,12 @@ namespace System.IOStream
             //finished reading document
             //file closed
 
-            StreamWriters writers = new StreamWriters();
-            writers.WriteToFile();
+            // StreamWriters writers = new StreamWriters();
+            //writers.WriteToFile();
             // This Code was written by Rosabel to learn Stream Writer class
+
+            StreamReaders readers = new StreamReaders();
+            readers.ReadFile();
             Console.ReadLine();
             // worked as soon as i removed all instance of filestream. apparently you cant have two streams accessing a file at the same time
             //F
