@@ -19,6 +19,8 @@ namespace System.IOStream
             StreamWriter stream = new StreamWriter(file);
             stream.Write(" This Code was written by Rosabel");
             stream.WriteLine(" to learn Stream Writer class");
+            stream.Write(" This Code was written by Rosabel");
+            stream.WriteLine(" to learn Stream Writer class");
             Console.WriteLine("written to file");
             stream.Close();
             Console.WriteLine("closed StreamWriter");
