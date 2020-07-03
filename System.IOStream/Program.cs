@@ -12,6 +12,12 @@ namespace System.IOStream
         {
             FileStreams file = new FileStreams();
             file.WriteFile();
+            Console.ReadLine();
+            //file opened
+            //data written into file
+            //file closed
+            //d.txt = f
+
         }
     }
 }
