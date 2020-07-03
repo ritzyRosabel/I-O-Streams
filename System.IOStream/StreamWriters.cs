@@ -21,7 +21,10 @@ namespace System.IOStream
             stream.WriteLine(" to learn Stream Writer class");
             Console.WriteLine("written to file");
             stream.Close();
+            Console.WriteLine("closed StreamWriter");
             file.Close();
+            Console.WriteLine("closed FileStream");
+
         }
     }
 }

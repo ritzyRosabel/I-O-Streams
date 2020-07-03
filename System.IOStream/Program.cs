@@ -10,19 +10,23 @@ namespace System.IOStream
     {
         static void Main(string[] args)
         {
-            FileStreams file = new FileStreams();
-            file.WriteFile();
+            // FileStreams file = new FileStreams();
+            //file.WriteFile();
 
             //file opened
             //data written into file
             //file closed
             //d.txt = f
 
-            file.Readfile();
+            //file.Readfile();
             //file opened
-           // 70
-           //finished reading document
+            // 70
+            //finished reading document
             //file closed
+
+            StreamWriters writers = new StreamWriters();
+            writers.WriteToFile();
+            
             Console.ReadLine();
             // worked as soon as i removed all instance of filestream. apparently you cant have two streams accessing a file at the same time
             //F
