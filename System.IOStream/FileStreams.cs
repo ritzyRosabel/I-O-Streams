@@ -27,7 +27,7 @@ namespace System.IOStream
 
             FileStream file = new FileStream(path + "\\d.txt", FileMode.Open);
             Console.WriteLine("file opened");
-            Console.WriteLine(file.ReadByte());
+            Console.WriteLine(File.ReadAllText(path+"\\d.txt"));
             Console.WriteLine("finished reading document");
             file.Close();
             Console.WriteLine("file closed");
