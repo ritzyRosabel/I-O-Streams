@@ -28,8 +28,8 @@ namespace System.IOStream
             //writers.WriteToFile();
             // This Code was written by Rosabel to learn Stream Writer class
 
-            StreamReaders readers = new StreamReaders();
-            readers.ReadFile();
+            //StreamReaders readers = new StreamReaders();
+            //readers.ReadFile();
             //filestream created
             //streamreader created
             //reading file
@@ -38,6 +38,10 @@ namespace System.IOStream
 
             //stream reader closed
             //filestream closed
+            TextWriters text = new TextWriters();
+            text.WriteFile();
+           
+            
             Console.ReadLine();
             // worked as soon as i removed all instance of filestream. apparently you cant have two streams accessing a file at the same time
             //F
