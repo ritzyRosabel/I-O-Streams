@@ -38,7 +38,7 @@ namespace System.IOStream
 
             //stream reader closed
             //filestream closed
-            Cosnsole.ReadLine();
+            Console.ReadLine();
             // worked as soon as i removed all instance of filestream. apparently you cant have two streams accessing a file at the same time
             //F
             // finished reading document
