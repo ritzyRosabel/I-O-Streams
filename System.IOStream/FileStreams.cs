@@ -9,6 +9,8 @@ namespace System.IOStream
 {
     public class FileStreams
     {
-      
+        public void WriteFile()
+        {
+x         }
     }
 }
