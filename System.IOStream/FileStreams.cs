@@ -25,11 +25,11 @@ namespace System.IOStream
         {
             string path = ConfigurationManager.AppSettings["path"];
 
-            FileStream file = new FileStream(path + "\\d.txt", FileMode.Open);
-            Console.WriteLine("file opened");
+          //  FileStream file = new FileStream(path + "\\d.txt", FileMode.Open);
+            //Console.WriteLine("file opened");
             Console.WriteLine(File.ReadAllText(path+"\\d.txt"));
             Console.WriteLine("finished reading document");
-            file.Close();
+       //     file.Close();
             Console.WriteLine("file closed");
 
         }

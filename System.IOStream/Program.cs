@@ -24,6 +24,10 @@ namespace System.IOStream
            //finished reading document
             //file closed
             Console.ReadLine();
+            //F
+           // finished reading document
+            //file closed
+
         }
     }
 }
