@@ -24,12 +24,16 @@ namespace System.IOStream
         public void Readfile()
         {
             string path = ConfigurationManager.AppSettings["path"];
-
-          //  FileStream file = new FileStream(path + "\\d.txt", FileMode.Open);
-            //Console.WriteLine("file opened");
-            Console.WriteLine(File.ReadAllText(path+"\\d.txt"));
+            byte[] buf = new byte[1024];
+            int c;
+             FileStream file = new FileStream(path + "\\d.txt", FileMode.Open);
+            Console.WriteLine("file opened");
+            while (( c = file.Read(buf, 0, buf.Length)) >0)
+            {
+                Console.WriteLine(Encoding.UTF8.GetString(buf, 0, c));
+            }
             Console.WriteLine("finished reading document");
-       //     file.Close();
+          file.Close();
             Console.WriteLine("file closed");
 
         }

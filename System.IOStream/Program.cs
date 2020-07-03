@@ -28,6 +28,7 @@ namespace System.IOStream
             //F
             // finished reading document
             //file closed
+            //same result
 
         }
     }
