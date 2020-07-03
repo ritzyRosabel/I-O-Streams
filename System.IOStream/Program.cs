@@ -24,8 +24,9 @@ namespace System.IOStream
            //finished reading document
             //file closed
             Console.ReadLine();
+            // worked as soon as i removed all instance of filestream. apparently you cant have two streams accessing a file at the same time
             //F
-           // finished reading document
+            // finished reading document
             //file closed
 
         }
