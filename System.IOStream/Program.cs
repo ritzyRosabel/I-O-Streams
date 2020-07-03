@@ -11,7 +11,7 @@ namespace System.IOStream
         static void Main(string[] args)
         {
             FileStreams file = new FileStreams();
-           // file.WriteFile();
+            file.WriteFile();
 
             //file opened
             //data written into file
