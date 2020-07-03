@@ -16,6 +16,7 @@ namespace System.IOStream
 
             FileStream file = new FileStream(path + "\\d.log", FileMode.OpenOrCreate);
             Console.WriteLine("file opened");
+            file.WriteByte(120);
             file.WriteByte(70);
             Console.WriteLine("data written into file");
             file.Close();
@@ -29,11 +30,16 @@ namespace System.IOStream
             long fileLength = file.Length;// gets size in byte
             byte[] buf = new byte[fileLength];
             Console.WriteLine("file opened");
-            while (( c = file.Read(buf, 0, buf.Length)) >0)
+            while ((c = file.Read(buf, 0, buf.Length)) > 0)
             {
                 Console.WriteLine(Encoding.UTF8.GetString(buf, 0, c));
             }
-            Console.WriteLine("finished reading document");
+            //for (int x=0; x<file.Length; x++)// when using char
+            //{
+            //    char r = (char)file.ReadByte();
+            //    Console.WriteLine(r);
+
+            //}
             file.Close();
             Console.WriteLine("file closed");
 
