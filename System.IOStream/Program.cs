@@ -10,7 +10,8 @@ namespace System.IOStream
     {
         static void Main(string[] args)
         {
-        
+            FileStreams file = new FileStreams();
+            file.WriteFile();
         }
     }
 }
