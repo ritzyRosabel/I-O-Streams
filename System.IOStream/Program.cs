@@ -10,7 +10,7 @@ namespace System.IOStream
     {
         // this code explains to me how to use the systemm.io namespace
         //  If this code works, then it was writen by Rosabel Olugbenga. If it doesn't, then i can only say one thing  "IT IS WHAT IT IS".
-        static void Main(string[] args)
+        static void Main( )
         {
             FileStreams file = new FileStreams();
             file.WriteFile();
