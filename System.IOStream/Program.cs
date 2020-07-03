@@ -8,28 +8,30 @@ namespace System.IOStream
 {
     class Program
     {
+        // this code explains to me how to use the systemm.io namespace
+        //  If this code works, then it was writen by Rosabel Olugbenga. If it doesn't, then i can only say one thing  "IT IS WHAT IT IS".
         static void Main(string[] args)
         {
-            // FileStreams file = new FileStreams();
-            //file.WriteFile();
+            FileStreams file = new FileStreams();
+            file.WriteFile();
 
             //file opened
             //data written into file
             //file closed
             //d.txt = f
 
-            //file.Readfile();
+            file.Readfile();
             //file opened
             // 70
             //finished reading document
             //file closed
 
-            // StreamWriters writers = new StreamWriters();
-            //writers.WriteToFile();
+            StreamWriters writers = new StreamWriters();
+            writers.WriteToFile();
             // This Code was written by Rosabel to learn Stream Writer class
 
-            //StreamReaders readers = new StreamReaders();
-            //readers.ReadFile();
+            StreamReaders readers = new StreamReaders();
+            readers.ReadFile();
             //filestream created
             //streamreader created
             //reading file
@@ -38,8 +40,9 @@ namespace System.IOStream
 
             //stream reader closed
             //filestream closed
-            //TextWriters text = new TextWriters();
-            //text.WriteFile();
+
+            TextWriters text = new TextWriters();
+            text.WriteFile();
             //wan ti mu hushpuppi, gucci gucci, yahoo boy don turn small puppy,
             //wan ti mu Oga yin,you are still pressingok i wont talk, i am watching i swear they will catch you
             //they will  catch you
