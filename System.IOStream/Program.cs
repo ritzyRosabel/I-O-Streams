@@ -30,7 +30,15 @@ namespace System.IOStream
 
             StreamReaders readers = new StreamReaders();
             readers.ReadFile();
-            Console.ReadLine();
+            //filestream created
+            //streamreader created
+            //reading file
+            // This Code was written by Rosabel to learn Stream Writer class
+            //This Code was written by Rosabel to learn Stream Writer class
+
+            //stream reader closed
+            //filestream closed
+            Cosnsole.ReadLine();
             // worked as soon as i removed all instance of filestream. apparently you cant have two streams accessing a file at the same time
             //F
             // finished reading document
