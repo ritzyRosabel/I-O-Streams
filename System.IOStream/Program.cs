@@ -11,7 +11,7 @@ namespace System.IOStream
         static void Main(string[] args)
         {
             FileStreams file = new FileStreams();
-            file.WriteFile();
+           // file.WriteFile();
 
             //file opened
             //data written into file
@@ -19,6 +19,10 @@ namespace System.IOStream
             //d.txt = f
 
             file.Readfile();
+            //file opened
+           // 70
+           //finished reading document
+            //file closed
             Console.ReadLine();
         }
     }

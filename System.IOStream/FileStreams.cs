@@ -25,7 +25,7 @@ namespace System.IOStream
         {
             string path = ConfigurationManager.AppSettings["path"];
 
-            FileStream file = new FileStream(path + "\\d.text", FileMode.Open);
+            FileStream file = new FileStream(path + "\\d.txt", FileMode.Open);
             Console.WriteLine("file opened");
             Console.WriteLine(file.ReadByte());
             Console.WriteLine("finished reading document");
