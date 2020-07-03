@@ -20,8 +20,17 @@ namespace System.IOStream
             Console.WriteLine("data written into file");
             file.Close();
             Console.WriteLine("file closed");
+        }
+        public void Readfile()
+        {
+            string path = ConfigurationManager.AppSettings["path"];
 
-
+            FileStream file = new FileStream(path + "\\d.text", FileMode.Open);
+            Console.WriteLine("file opened");
+            Console.WriteLine(file.ReadByte());
+            Console.WriteLine("finished reading document");
+            file.Close();
+            Console.WriteLine("file closed");
 
         }
     }
