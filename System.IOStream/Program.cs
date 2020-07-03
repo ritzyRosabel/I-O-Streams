@@ -46,6 +46,14 @@ namespace System.IOStream
 
             TextReaders reader = new TextReaders();
             reader.ReadFile();
+            //file open
+            //reading file
+            //wan ti mu hushpuppi, gucci gucci, yahoo boy don turn small puppy,
+            //wan ti mu Oga yin, you are still pressingok i wont talk, i am watching i swear they will catch you
+            //they will  catch you
+
+            //file closed
+ 
             Console.ReadLine();
             // worked as soon as i removed all instance of filestream. apparently you cant have two streams accessing a file at the same time
             //F

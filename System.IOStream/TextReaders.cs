@@ -19,6 +19,7 @@ namespace System.IOStream
             string data = reader.ReadToEnd();
             Console.WriteLine(data);
             reader.Close();
+            Console.WriteLine("file closed");
         }
     }
 }
